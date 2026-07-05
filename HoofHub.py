@@ -80,6 +80,10 @@ def baixar_video():
                     'outtmpl': save_path,
                     'geo_bypass': True,
                     'progress_hooks': [progress_hook],
+                    'http_headers': {
+                    'User-Agent': 'Mozilla/5.0',
+                    'Referer': url,
+                    }
                 }
 
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
