@@ -80,10 +80,6 @@ def baixar_video():
                     'outtmpl': save_path,
                     'geo_bypass': True,
                     'progress_hooks': [progress_hook],
-                    
-                    'impersonate': 'chrome',
-                    'cookiefile': None,
-
                     'http_headers': {
                     'User-Agent': 'Mozilla/5.0',
                     'Referer': url,
@@ -183,9 +179,6 @@ def baixar_lista():
                     'format': 'bestvideo+bestaudio/best',
                     'outtmpl': save_path,
                     'progress_hooks': [progress_hook],
-                    
-                    'impersonate': 'chrome',
-                    'cookiefile': None,
 
                     'http_headers': {
                         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
